@@ -4,7 +4,8 @@ import { wp, hp } from '../../helper/index'
 const styles = StyleSheet.create({
     blankImageStyle: {
     height:hp(10),
-    width: wp(20)
+    width: wp(20),
+    borderRadius:hp(10),
   },
   noInternet: {
     height:hp(25),

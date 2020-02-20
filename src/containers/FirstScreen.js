@@ -1,12 +1,12 @@
 import React from 'react';
-import {View, StyleSheet, Text, Button} from 'react-native';
+import {View, StyleSheet,TouchableOpacity,SafeAreaView} from 'react-native';
 import {CustomText, CustomImage,NoInternet } from '../components'
 import * as NetInfo from "@react-native-community/netinfo";
 export default class FirstScreen extends React.Component {
+  
   state = {
     isOnceConnected: false,
     allowNoNetInfoDisplay: false,
-    error: false,
   };
   
   componentWillMount() {
@@ -44,30 +44,47 @@ export default class FirstScreen extends React.Component {
     const {isOnceConnected,allowNoNetInfoDisplay } = this.state;
     if (!isOnceConnected && allowNoNetInfoDisplay) return <NoInternet />;
     return (
+      <SafeAreaView style={styles.safeAreaView}>
       <View style={styles.container}>
-        <CustomText text={'First Screen'} textStyle="customTextStyle" ></CustomText>
+        
+        <View style={styles.subContainer}>
         <CustomImage imageStyle={'blankImageStyle'}/>
-        <Button
+        <CustomText text={'simarrajput12'} textStyle="customTextStyle" ></CustomText>
+        </View>
+        <TouchableOpacity
           style={styles.buttonStyle}
-          title={'Next'}
           onPress={()=>navigate('SecondScreen')}
-        />
+        ><CustomText text={'Next'} textStyle="customTextStyle" ></CustomText>
+        </TouchableOpacity>
       </View>
+      </SafeAreaView>
     );
   }
 }
 
 const styles = StyleSheet.create({
+
+  safeAreaView: {
+    flex:1,
+    backgroundColor:'white'
+  },
   container: {
     flex: 1,
-    justifyContent: 'center',
-    alignItems: 'center',
-    backgroundColor:'white'
+    backgroundColor:'white',
+    marginTop:10
+  },
+  subContainer: {
+    flex:1,
+    alignItems:'flex-end',
+    marginRight:20
   },
   buttonStyle: {
     backgroundColor: 'green',
-    marginTop: 5,
-    width: '50%',
-    borderRadius: 8,
+    width: '100%',
+    justifyContent:'center',
+    alignItems:'center',
+    height:50,
+    bottom:0,
+    position:'absolute',
   },
 });

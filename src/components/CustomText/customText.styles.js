@@ -5,12 +5,12 @@ import {StyleSheet } from 'react-native';
 const styles = StyleSheet.create({
   customTextStyle: {
     textAlign: 'center',
-    fontSize: moderateScale(20),
-    color: 'green',
+    fontSize: moderateScale(15),
+    color: 'black',
   },
   noInternetText: {
     textAlign: 'center',
-    fontSize: moderateScale(20),
+    fontSize: moderateScale(16),
     color: 'red',
   },
  
