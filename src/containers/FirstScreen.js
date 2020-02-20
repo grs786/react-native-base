@@ -1,6 +1,6 @@
 import React from 'react';
 import {View, StyleSheet, Text, Button} from 'react-native';
-import {CustomText} from '../components'
+import {CustomText, CustomImage } from '../components'
 export default class FirstScreen extends React.Component {
   render() {
     const {
@@ -9,6 +9,7 @@ export default class FirstScreen extends React.Component {
     return (
       <View style={styles.container}>
         <CustomText text={'First Screen'} textStyle="customTextStyle" ></CustomText>
+        <CustomImage imageStyle={'blankImageStyle'}/>
         <Button
           style={styles.buttonStyle}
           title={'Next'}

@@ -1,6 +1,4 @@
-import FirstScreen from '../containers/FirstScreen';
-import SecondScreen from '../containers/SecondScreen';
-
+import {FirstScreen,SecondScreen } from '../containers'
 export default {
   FirstScreen: {screen: FirstScreen},
   SecondScreen: {screen: SecondScreen},
