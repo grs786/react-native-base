@@ -8,6 +8,11 @@ const styles = StyleSheet.create({
     fontSize: moderateScale(20),
     color: 'green',
   },
+  noInternetText: {
+    textAlign: 'center',
+    fontSize: moderateScale(20),
+    color: 'red',
+  },
  
 });
 

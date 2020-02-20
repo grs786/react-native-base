@@ -16,6 +16,7 @@
 		0B1C6E7B23FD1A2E00D8D2AB /* OpenSans-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0B1C6E7423FD1A2D00D8D2AB /* OpenSans-SemiBold.ttf */; };
 		0B1C6E7C23FD1A2E00D8D2AB /* SFProText-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0B1C6E7523FD1A2D00D8D2AB /* SFProText-Bold.ttf */; };
 		0B1C6E7D23FD1A2E00D8D2AB /* SFProText-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0B1C6E7623FD1A2D00D8D2AB /* SFProText-Medium.ttf */; };
+		0B3FE7A923FE731B00D146EB /* libreact-native-netinfo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0B3FE7A823FE731B00D146EB /* libreact-native-netinfo.a */; };
 		13B07FBC1A68108700A75B9A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB01A68108700A75B9A /* AppDelegate.m */; };
 		13B07FBD1A68108700A75B9A /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB11A68108700A75B9A /* LaunchScreen.xib */; };
 		13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
@@ -64,6 +65,7 @@
 		0B1C6E7423FD1A2D00D8D2AB /* OpenSans-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "OpenSans-SemiBold.ttf"; path = "src/assets/fonts/OpenSans-SemiBold.ttf"; sourceTree = "<group>"; };
 		0B1C6E7523FD1A2D00D8D2AB /* SFProText-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "SFProText-Bold.ttf"; path = "src/assets/fonts/SFProText-Bold.ttf"; sourceTree = "<group>"; };
 		0B1C6E7623FD1A2D00D8D2AB /* SFProText-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "SFProText-Medium.ttf"; path = "src/assets/fonts/SFProText-Medium.ttf"; sourceTree = "<group>"; };
+		0B3FE7A823FE731B00D146EB /* libreact-native-netinfo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = "libreact-native-netinfo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1178F7344353028CDB6DA96C /* Pods-ReactNativeBase.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ReactNativeBase.release.xcconfig"; path = "Target Support Files/Pods-ReactNativeBase/Pods-ReactNativeBase.release.xcconfig"; sourceTree = "<group>"; };
 		13B07F961A680F5B00A75B9A /* ReactNativeBase.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ReactNativeBase.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		13B07FAF1A68108700A75B9A /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = ReactNativeBase/AppDelegate.h; sourceTree = "<group>"; };
@@ -101,6 +103,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0B3FE7A923FE731B00D146EB /* libreact-native-netinfo.a in Frameworks */,
 				CD05FBDCBA26770B70CB08E0 /* libPods-ReactNativeBase.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -158,6 +161,7 @@
 		2D16E6871FA4F8E400B85C8A /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				0B3FE7A823FE731B00D146EB /* libreact-native-netinfo.a */,
 				ED297162215061F000B7C4FE /* JavaScriptCore.framework */,
 				ED2971642150620600B7C4FE /* JavaScriptCore.framework */,
 				29ED9DEF53E8BA6D0D4EC7A4 /* libPods-ReactNativeBase.a */,
