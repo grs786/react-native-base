@@ -1,6 +1,6 @@
 import React from 'react';
 import {View, StyleSheet, Text, Button} from 'react-native';
-
+import {CustomText} from '../components'
 export default class FirstScreen extends React.Component {
   render() {
     const {
@@ -8,11 +8,11 @@ export default class FirstScreen extends React.Component {
     } = this.props;
     return (
       <View style={styles.container}>
-        <Text> This is First Screen </Text>
+        <CustomText text={'First Screen'} textStyle="customTextStyle" ></CustomText>
         <Button
           style={styles.buttonStyle}
           title={'Next'}
-          onPress={navigate('SecondScreen')}
+          onPress={()=>navigate('SecondScreen')}
         />
       </View>
     );

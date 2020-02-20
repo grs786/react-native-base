@@ -1,12 +1,12 @@
 import React from 'react';
 import {View, StyleSheet, Text, Button} from 'react-native';
+import {CustomText} from '../components'
 
 export default class SecondScreen extends React.Component {
   render() {
     return (
       <View style={styles.container}>
-        <Text> This is Second Screen </Text>
-        <Button style={styles.buttonStyle} title={'Next'} />
+        <CustomText text={'Second Screen'} textStyle="customTextStyle" ></CustomText>
       </View>
     );
   }
